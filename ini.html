@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>Halaman Tampilan Awal</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+</head>
+<body background="assets/10.jpeg">
+ 
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		header{
+			background:#232323;
+			padding:10px;
+			font-family: sans-serif;	
+			color:#fff;
+			font-family:"open sans";
+			overflow:hidden;
+			margin: 0;
+		}
+ 
+		.judul{
+			float: left;
+			margin: 0;
+		}
+ 
+		.menu{
+			position: fixed;
+			background: #f6f6f6;
+			color: #232323;			
+			height: 100%;
+			width: 200px;
+			top: 0;
+			left: -300px;
+			-webkit-transition: left 0.2s;
+			transition: left 0.2s;
+			padding: 20px;
+			border: 1px solid #ccc;			
+		}
+ 
+		.menu ul{
+			padding: 0;
+		}
+ 
+		.menu li{
+			list-style-type: none;
+			padding: 10px 0px;
+		}
+ 
+		.menu a{
+			color: #232323;
+			text-decoration: none;
+			font-size: 10pt;
+		}
+ 
+		.tombol{
+			float: right;
+			background: transparent;
+			padding: 10px;
+			color: #fff;
+			border: 1px solid #fff;
+			cursor: pointer;
+		}
+ 
+		.slide-menu-tampil{
+			left: 0 !important;
+		}
+	</style>
+	<header>
+		<h1 class="judul">Bingung Mau Makan Apa Hari Ini?</h1><br>
+		<br>
+		<br><center>Dan Gak Tau Dimana Tempat Makanan Yang Enak?</center>
+		<hr><center>Yuuuuuhuuuuu.....<br>Kamu Datang Ketempat Yang Benar!!!</center></hr>
+ 
+		<button class="tombol">MENU</button>
+ 		
+		<nav class="menu">    
+			<h4>Menu Navigasi</h4>
+			<ul>
+				<li><a href="index.php">Mau Masuk?</a></li>
+				<li><a href="saran.php?Menu=<?php echo $hasil ["Menu"];?>Kotak Saran</a></li>
+				<li><a href="tentangkami.php">Tentang Kami</a></li>
+			</ul>
+		</nav>
+	</header>
+ 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.tombol').click(function(){
+				$('.menu').toggleClass("slide-menu-tampil");
+			});
+		});
+	</script>
+	
+</body>
+</html>

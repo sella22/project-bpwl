@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body background="assets/1222.jfif ">
+	<div style="background-color: salmon; height: 20vh;">
+	<a  href="../halaman_user.php">kembali</a>
+	<center><h1>Maps Richeese!!!</h1></center>
+	</div>
+	<center>
+<table border="2">
+
+<hr>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6443703901455!2d101.42143571457191!3d0.535025899609665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ab4be6a1e99f%3A0xf9ffc54c92e1067!2sRicheese%20Factory!5e0!3m2!1sen!2sid!4v1580277872018!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</center>
+</table>
+</body>
+</html>
